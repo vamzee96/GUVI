@@ -1,11 +1,16 @@
 x, y= map(int, input().split())
-for no in range(x+1, y):
-   if no > 1: 
-       for a in range(2, no): 
-           if (no % a) == 0: 
-               break
-       else:
-           if no==y-1 or no==y-2:
-               print(no)
-           else:
-               print(no, end = " ")
+zet=[]
+i=x+1
+while i<y:
+    kee=0
+    for j in range(2,i):
+        if(i%j==0):
+                    kee=1
+    if kee==0:
+        zet.append(i)
+    i=i+1
+for i in range(0,len(zet)):
+    if(zet[i]==zet[len(zet)-1]):
+        print(zet[i])
+    else:
+        print(zet[i],end=" ")
