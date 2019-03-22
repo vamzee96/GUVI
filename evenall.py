@@ -4,4 +4,4 @@ for no in range(x+1, y):
         if no==y-1 or no==y-2:
             print(num)
         else:
-print(num, end = " ")
+            print(num, end = " ")
