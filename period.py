@@ -1,2 +1,2 @@
-string=input
-print(string+".")
+strin=input()
+print(strin+".")
